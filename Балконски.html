@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Сайт.css">
+
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1155px;
+            position: relative;
+            margin: auto;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+<body>
+<IMG SRC="цветя и градина.jpg" width="315" height="200" align="left">
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+
+        <img src="1.jpg" height="200" style="width:75%">
+        <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+
+        <img src="5.jpg" height="200" style="width:75%">
+        <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+
+        <img src="3.jpg" height="200" style="width:75%">
+        <div class="text"></div>
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Changeс image every 2 seconds
+    }
+</script>
+</head>
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 78px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: purple;
+        }
+
+        .active {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="Цветя и градина.html" class="active"><h2>Стайни растения</h2></A></li>
+    <li><a href="Балконски.html"><h2>Балконски растения</h2></A></li>
+    <li><a href="Градински.html"><h2>Градински растения</h2></A></li>
+    <li><a href="Контакти2.html"><h2>Контакти</h2></A></li>
+</ul>
+<BR>
+<section>
+    <div1><IMG SRC="мушкато.jpg" width="300" height="230" align="center">
+        <p><A ID="toc">
+        <H1>Мушкато</H1></A>
+        <p>Това растение е едно от най-непретенциозните, но и то си има своите тънкости при отглеждането.Развива се
+            много добре при температури между 10-25 С. Когато нощните температури паднат под 6-7 С., растенията се
+            прибират в затворени помещения, където презимуват при температура не по-ниска от 4-5 С.,на светло място и
+            при оскъдни поливки.Подхранването по време на цъфтежа се извършва с органични торове, веднъж на 10-14 дни.
+        </p></div1>
+    <div1><IMG SRC="петуния.jpg" width="300" height="230" align="center">
+        <p><A ID="toc1">
+        <H1>Петуния</H1></A>
+        <p> За най-добри резултати, се старайте да осигурите на семената температура около 15-20 градуса и повече непряка
+            светлина.Семената на Петунията покълват за около 6-10 дни, а може и малко повече.Финалното пресаждане може
+            да се направи след като растенията имат поне 3-4 листа ( около 10 седмици след залагане на разсада) и е
+            отминала опасността от пролетните слани.Когато Петунията започне да цъфти, можете да започнете да я
+            подхранвате веднъж седмично с тор.
+        </p></div1>
+    <div1><IMG SRC="агератум.jpg" width="300" height="230" align="center">
+        <p><A ID="toc2">
+        <H1>Агератум</H1></A>
+        <p>За да покаже агератумът истинските си декоративни качества, трябва да му се определи открито слънчево място.
+            Даже лекото засенчване се отразява неблагоприятно на общия вид и на цъфтежа му.Почвата трябва да е лека,
+            неутрална, умерено плодородна. Ако е много богата, се развива силна стъблена и листна маса за сметка на
+            по-малко цветове.Полива се обилно, но не прекалено. Вода се дава само когато повърхносният почвен слой е
+            добре просъхнал.
+        </p></div1>
+    <div1><IMG SRC="тагетес.jpg" width="300" height="230" align="center">
+        <p><A ID="toc3">
+        <H1>Тагетес</H1></A>
+        <p>То е бързорастящо, топлолюбиво, сухоустойчиво и непретенциозно към почвените фактори. Добре реагира на
+            открити, слънчеви места, но не му пречи да се развива, расте и цъфти обилно и при лека сянка.За растежа и
+            развитието му са подходящи различни видове почви, но най-добри са плодородните, глинесто-песъчливи, по-леки,
+            но богати на хранителни вещества с достатъчно влага, особено в първата половина на лятото.
+        </p></div1>
+</section>
+</body>
+</html>

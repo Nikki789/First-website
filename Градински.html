@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="Сайт.css">
+
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1155px;
+      position: relative;
+      margin: auto;
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+  </style>
+</head>
+<body>
+<IMG SRC="цветя и градина.jpg" width="315" height="200" align="left">
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+
+    <img src="1.jpg" height="200" style="width:75%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="5.jpg" height="200" style="width:75%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="3.jpg" height="200" style="width:75%">
+    <div class="text"></div>
+  </div>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+  }
+</script>
+</head>
+<head>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 78px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: purple;
+    }
+
+    .active {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li><a href="Цветя и градина.html" class="active"><h2>Стайни растения</h2></A></li>
+  <li><a href="Балконски.html"><h2>Балконски растения</h2></A></li>
+  <li><a href="Градински.html"><h2>Градински растения</h2></A></li>
+  <li><a href="Контакти2.html"><h2>Контакти</h2></A></li>
+</ul>
+<BR>
+<section>
+  <div1><IMG SRC="влачеща роза.jpg" width="300" height="230" align="center">
+    <p><A ID="toc">
+    <H1>Влачеща роза</H1></A>
+    <p>Когато избирате място за засаждане на розите в градината ви, имайте предвид, че те се нуждаят минимум от 6 часа
+      слънчева светлина на ден.Достатъчно е два пъти седмично обилно да ги полеем с вода, но запомнете – към
+      корените.Поливайте рано сутрин или привечер.Само влачещите рози почти не се кастрят през първите две години.
+      Отстраняват се само мъртви и болни филизи.
+    </p></div1>
+  <div1><IMG SRC="калдъръмче.jpg" width="300" height="230" align="center">
+    <p><A ID="toc1">
+    <H1>Калдъръмче</H1></A>
+    <p>Калдъръмчето не понася сянката. Ето защо трябва задължително да бъде засадено или поставено на добре огряно от
+      слънчевата светлина място.Поливането е оскъдно и е добре да се случва по-рядко.Подходящата почва за тученицата
+      трябва да е песъчлива с примес от глина и обикновена градинска почва.Калдъръмчето обича умерените температури.
+      Издържа както на застудявания, така и на горещини.
+    </p></div1>
+  <div1><IMG SRC="клематис.jpg" width="300" height="230" align="center">
+    <p><A ID="toc2">
+    <H1>Клематис</H1></A>
+    <p>Kлeмaтиcитe oбичaт cвeтлинa, нo нe издъpжaт пpeгpявaнe нa кopeнитe.Oбeзaтeлнo ocигypeтe пoдпopa или cкeлe нa
+      клeмaтиca нeпocpeдcтвeнo cлeд зacaждaнeтo.Пoливaйтe peдoвнo, нo yмepeнo и oбeзaтeлнo мyлчиpaйтe oкoлocтъблeнaтa
+      ямкa, зa дa пpeдпaзитe кopeнитe oт пpeгpявaнe. Пoдpязвaнeтo cъщo e дeйнocт, кoятo тpябвa дa ce извъpшвa peдoвнo –
+      пoнe двa пъти гoдишнo.
+    </p></div1>
+  <div1><IMG SRC="бръшлян.jpg" width="300" height="230" align="center">
+    <p><A ID="toc3">
+    <H1>Бръшлян</H1></A>
+    <p>Бръшлянът е сравнително непретенциозно растение,но все пак има някои изисквания. Предпочита влажна, отцедлива
+      почва. При студове няма проблеми, но не харесва високите температури и пряката слънчева светлина. Не обича сухия
+      климат.Бръшлянът расте бавно. Ако искате да ускорите растежа, подрязвайте връхчетата.Размножава се чрез резници.
+    </p></div1>
+</section>
+</body>
+</html>

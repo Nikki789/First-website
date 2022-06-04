@@ -1,0 +1,71 @@
+body {
+	background-image: url("background3.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+form {
+	border: 1px solid white;
+	border-radius: 15px;
+	box-shadow: 5px 5px 15px black;
+	width: 450px;
+	height: 650px;
+	margin: 0 auto;
+	padding-top: 30px;
+	background: #333;
+}
+
+input, textarea, select {
+	background-color: white;
+}
+
+input:focus, textarea:focus, select:focus {
+	background-color: yellow;
+}
+
+h2 {
+	text-align: center;
+	font-size: larger;
+	color: white;
+}
+
+@font-face {
+	font-family: IBMPlexSerif-LightItalic;
+	src: url(IBMPlexSerif-LightItalic.ttf);
+}
+
+h1, h2, h3 {
+	font-family: IBMPlexSerif-LightItalic;
+	text-align: center;
+	letter-spacing: 2px;
+	text-shadow: 3px 3px 3px grey;
+}
+
+a:hover {
+	color: black;
+	text-shadow: 3px 3px 3px black;
+}
+
+a:active {
+	color: yellow;
+	text-shadow: none;
+}
+
+table td {
+	padding: 15px 0;
+	margin: 0;
+	border: 1px solid purple;
+	text-align: center;
+	background-color: lightgreen;
+	opacity: 0.5;
+}
+
+a:hover {
+	color: black;
+	text-shadow: 3px 3px 3px black;
+}
+
+a:active {
+	color: yellow;
+	text-shadow: none;
+}
